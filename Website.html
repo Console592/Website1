@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Генератор паролей</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Генератор паролей</h1>
+        <div class="input-group">
+            <input type="text" id="userName" placeholder="Введите ваше имя">
+            <button onclick="generatePassword()">Сгенерировать пароль</button>
+        </div>
+        <div id="passwordResult"></div>
+        
+        <div class="admin-section">
+            <button onclick="showAdminPanel()">Администратор</button>
+            <div id="adminPanel" class="hidden">
+                <h2>Админ-панель</h2>
+                <div id="userList"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
